@@ -1,7 +1,10 @@
 import java.util.ArrayList;
 
 public class Array {
-    //El array no sabe cuántas posiciones están ocupadas (solo tamaño total)
+    /**
+     * I will make a Array that can resize himself, to learn how to increase the size of the array onces it's full and then, i will use
+     * Java colleccions to do the same
+     */
     int[] miArray = new int[10];
 
     /**
@@ -9,22 +12,16 @@ public class Array {
      *
      * @return true if the array is full, false otherwise
      */
+
     public boolean fullArray() {
-        //Lenght is the number of elements in the array
-        //El array no sabe cuántas posiciones están ocupadas (solo tamaño total)
+        //Lenght is the number of elements in the array, the array just know the completed size
         for (int i = 0 ; i < miArray.length; i++) {
-
-            /**
-             * Deleted the next line ReSase the array
-             */
-
-            if (miArray[i] == 9) miArray[9] = 0;
-
+            //if (miArray[i] == 9) miArray[9] = 0; // Make a position 0 to validate if we have to or not resize the array
             if (miArray[i] == 0) {
-                return true;
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
     /**
@@ -54,7 +51,7 @@ public class Array {
 
         System.out.println("Using Array needs two methods to resize the array");
         Array array = new Array();
-           // Initialize the array elements with consecutive numbers
+        // Initialize the array elements with consecutive numbers
         for (int i = 0; i < array.miArray.length; i++) {
             array.miArray[i] = i+1;
         }
@@ -65,8 +62,8 @@ public class Array {
             System.out.println(newArray[i]);
         }
 
-        //Using ArrayList
-        //El límite es la memoria de la JVM
+        //Using ArrayList java.util.ArrayList
+        //The limited of the array is the memory of the JVM
         ArrayList<String> miArrayList = new ArrayList<String>();
         miArrayList.add("\nArrayList\n");
         miArrayList.add("\n-HI\n");
@@ -80,12 +77,6 @@ public class Array {
         if (contain) System.out.println("The ArrayList contain");
 
     }
-
-
-    /**
-     ** Using java.util.ArrayList
-     */
-
 }
 
 
