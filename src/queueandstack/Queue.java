@@ -1,17 +1,29 @@
 package queueandstack;
 import node.Node;
-
+/**
+ * The Queue class represents a basic implementation of a queue data structure.
+ *
+ * @param <T> the type of elements stored in the queue
+ */
 public class Queue<T> {
 
-    private Node<T> head;
-    private Node<T> tail;
-    public int length;
+    private Node<T> head; // The first element in the queue
+    private Node<T> tail; // The last element in the queue
+    public int length; // The number of elements in the queue
 
+    /**
+     * Creates a new instance of the Queue class.
+     * Initializes the head and tail to null, indicating an empty queue.
+     */
     public Queue() {
         head = null;
         tail = null;
     }
 
+    /**
+     * Clears the queue by setting the head and tail to null and length to 0.
+     * Prints a message if the queue is already empty.
+     */
     public void makeEmpty() {
         if (head != null) {
             head = null;
@@ -22,46 +34,54 @@ public class Queue<T> {
         }
     }
 
-
+    /**
+     * Adds an element to the end of the queue.
+     *
+     * @param data the element to be added
+     */
     public void enqueue(T data) {
         Node<T> newNode = new Node<>(data);
         if (head == null) {
+            // The queue is empty, so the new element becomes both the head and the tail
             head = newNode;
             tail = newNode;
         } else {
+            // Appends the new element to the tail of the queue
             tail.setNext(newNode);
             tail = newNode;
-
         }
         length++;
     }
 
+    /**
+     * Removes the first element from the queue.
+     * Prints a message if the queue is empty.
+     */
     public void dequeue() {
         if (head == null) {
             System.out.println("There are no elements in the queue");
         } else {
-            Node<T> pointer = head;
-            while (pointer.getNext().getNext() != null) {
-                pointer = pointer.getNext();
-            }
-            tail = pointer;
-            tail.setNext(null);
-
+            // Updates the head to the next element in the queue
+            head = head.getNext();
+            System.out.println("The element " + head.getData().toString() + " was removed");
         }
         length--;
     }
 
-    public void overView(){
-        if (head == null && tail == null){
-            System.out.println("Is empty the queue");
+    /**
+     * Displays an overview of the elements in the queue.
+     * Prints a message if the queue is empty.
+     */
+    public void overView() {
+        if (head == null && tail == null) {
+            System.out.println("The queue is empty");
         } else {
             Node<T> pointer = head;
-            while (pointer.getNext() != null){
+            while (pointer.getNext() != null) {
                 System.out.println(pointer.getData().toString());
                 pointer = pointer.getNext();
             }
             System.out.println(pointer.getData().toString());
         }
-
     }
 }

@@ -5,9 +5,9 @@ public class TestStackAndQueue {
     public static void main(String[] args) {
         //Stack implementation
         Stack<Integer> stack = new Stack<>();
-        stack.push(10);
-        stack.push(20);
-        stack.push(30);
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
         stack.pop();
         stack.pop();
         stack.deploy();
@@ -21,5 +21,6 @@ public class TestStackAndQueue {
         queue.enqueue(30);
         queue.overView();
         queue.dequeue();
+        queue.overView();
     }
 }
