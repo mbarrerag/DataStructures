@@ -9,6 +9,8 @@ public class Node<T> {
     private T data; // Data stored in the node
     private Node<T> next; // Reference to the next node in the list
 
+    private Node<T> previous; // Reference to the previous node in the list
+
     /**
      * Constructor for the Node class.
      *
@@ -53,4 +55,13 @@ public class Node<T> {
     public void setNext(Node<T> next) {
         this.next = next;
     }
+
+    public Node<T> getPrevious() {
+        return previous;
+    }
+
+    public void setPrevious(Node<T> previous) {
+        this.previous = previous;
+    }
 }
+
