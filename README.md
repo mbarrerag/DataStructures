@@ -2,8 +2,8 @@
 
 Welcome to the Data Structures Repository! This repository contains various data structures implemented. These data structures are fundamental building blocks in computer science and can be used to efficiently store, manipulate, and retrieve data.
 
-List of Data Structures
-Arraly: An array-based list implementation that provides dynamic resizing and efficient random access.
+# List of Data Structures
+
 
 # Hash: 
 A hash data structure that uses a hash function to map keys to array indices, providing efficient retrieval and storage of key-value pairs.
