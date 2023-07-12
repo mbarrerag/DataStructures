@@ -1,5 +1,5 @@
 # DataStructures
-Data Structures Repository
+
 Welcome to the Data Structures Repository! This repository contains various data structures implemented. These data structures are fundamental building blocks in computer science and can be used to efficiently store, manipulate, and retrieve data.
 
 List of Data Structures
