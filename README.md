@@ -45,5 +45,5 @@ Utilize the available methods to interact with the data structure.
 Contributing
 Feel free to contribute to this repository by suggesting improvements, reporting issues, or adding new data structures. Fork the repository, make your changes, and submit a pull request. Your contributions are highly appreciated!
 
-License
+# License
 This repository is licensed under the MIT License. You are free to use, modify, and distribute the code for both commercial and non-commercial purposes.
