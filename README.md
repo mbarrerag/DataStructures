@@ -11,15 +11,20 @@ An implementation of a binary tree, a hierarchical data structure in which each 
 # AVLTree: 
 An AVL tree implementation, which is a self-balancing binary search tree. It maintains a balance factor to ensure efficient search, insertion, and deletion operations.
 
-# Queue: A queue data structure that follows the First-In-First-Out (FIFO) principle. It supports enqueue (adding elements to the end) and dequeue (removing elements from the front) operations.
+# Queue: 
+A queue data structure that follows the First-In-First-Out (FIFO) principle. It supports enqueue (adding elements to the end) and dequeue (removing elements from the front) operations.
 
-# Stack: A stack data structure that follows the Last-In-First-Out (LIFO) principle. It supports push (adding elements to the top) and pop (removing elements from the top) operations.
+# Stack: 
+A stack data structure that follows the Last-In-First-Out (LIFO) principle. It supports push (adding elements to the top) and pop (removing elements from the top) operations.
 
-# DoubleLinkedList: A doubly linked list implementation, where each node contains references to both the previous and next nodes. It provides efficient insertion, deletion, and traversal operations.
+# DoubleLinkedList: 
+A doubly linked list implementation, where each node contains references to both the previous and next nodes. It provides efficient insertion, deletion, and traversal operations.
 
-# LinkedList: A singly linked list implementation, where each node contains a reference to the next node. It supports efficient insertion, deletion, and traversal operations.
+# LinkedList: 
+A singly linked list implementation, where each node contains a reference to the next node. It supports efficient insertion, deletion, and traversal operations.
 
-# Hash: A hash data structure that uses a hash function to map keys to array indices, providing efficient retrieval and storage of key-value pairs.
+# Hash: 
+A hash data structure that uses a hash function to map keys to array indices, providing efficient retrieval and storage of key-value pairs.
 
 # Usage
 
