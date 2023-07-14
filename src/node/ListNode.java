@@ -1,22 +1,25 @@
 package node;
+
+import java.util.List;
+
 /**
  * The Node class represents a single node in a linked list.
  *
  * @param <T> the type of data stored in the node
  */
-public class Node<T> {
+public class ListNode<T> {
 
     private T data; // Data stored in the node
-    private Node<T> next; // Reference to the next node in the list
+    private ListNode<T> next; // Reference to the next node in the list
 
-    private Node<T> previous; // Reference to the previous node in the list
+    private ListNode<T> previous; // Reference to the previous node in the list
 
     /**
      * Constructor for the Node class.
      *
      * @param data the data to be stored in the node
      */
-    public Node(T data) {
+    public ListNode(T data) {
         this.data = data;
     }
 
@@ -43,7 +46,7 @@ public class Node<T> {
      *
      * @return the reference to the next node
      */
-    public Node<T> getNext() {
+    public ListNode<T> getNext() {
         return next;
     }
 
@@ -52,15 +55,15 @@ public class Node<T> {
      *
      * @param next the reference to the next node
      */
-    public void setNext(Node<T> next) {
+    public void setNext(ListNode<T> next) {
         this.next = next;
     }
 
-    public Node<T> getPrevious() {
+    public ListNode<T> getPrevious() {
         return previous;
     }
 
-    public void setPrevious(Node<T> previous) {
+    public void setPrevious(ListNode<T> previous) {
         this.previous = previous;
     }
 }

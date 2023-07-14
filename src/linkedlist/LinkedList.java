@@ -1,9 +1,11 @@
 package linkedlist;
-import node.Node;
+import node.ListNode;
+
+import java.util.List;
 
 public class LinkedList<T> {
 
-    private Node<T> head; // Pointer to the first node of the list
+    private ListNode<T> head; // Pointer to the first node of the list
     int length = 0; // Counter to store the length of the list
 
     /**
@@ -11,7 +13,7 @@ public class LinkedList<T> {
      * Initializes the head pointer as null and the length as zero.
      */
     public LinkedList() {
-        Node<T> head = null;
+        ListNode<T> head = null;
         int length = 0;
     }
 
@@ -38,11 +40,11 @@ public class LinkedList<T> {
      * @param data the data to be added to the list
      */
     public void add(T data) {
-        Node<T> newNode = new Node<T>(data);
+        ListNode<T> newNode = new ListNode<T>(data);
         if (isEmpty()) {
             head = newNode;
         } else {
-            Node<T> pointer = head;
+            ListNode<T> pointer = head;
             while (pointer.getNext() != null) {
                 pointer = pointer.getNext();
             }
@@ -59,7 +61,7 @@ public class LinkedList<T> {
         if (head == null) {
             System.out.println("There are no elements in the list");
         } else {
-            Node<T> pointer = head;
+            ListNode<T> pointer = head;
             while (pointer.getNext() != null) {
                 System.out.println(pointer.getData().toString());
                 pointer = pointer.getNext();
@@ -76,7 +78,7 @@ public class LinkedList<T> {
         if (head == null) {
             System.out.println("There are no elements in the list");
         } else {
-            Node<T> pointer = head;
+            ListNode<T> pointer = head;
             System.out.println(pointer.getData().toString());
         }
     }
@@ -104,7 +106,7 @@ public class LinkedList<T> {
                 removeFirst();
             } else {
                 int counter = 0;
-                Node<T> pointer = head;
+                ListNode<T> pointer = head;
                 while ((counter < index - 1) && (pointer.getNext() != null)) {
                     pointer = pointer.getNext();
                     counter++;
@@ -122,7 +124,7 @@ public class LinkedList<T> {
      */
     public void removeLast() {
         if (head != null) {
-            Node<T> pointer = head;
+            ListNode<T> pointer = head;
             while (pointer.getNext() != null) {
                 pointer = pointer.getNext();
             }

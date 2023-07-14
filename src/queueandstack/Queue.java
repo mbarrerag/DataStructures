@@ -1,5 +1,5 @@
 package queueandstack;
-import node.Node;
+import node.ListNode;
 /**
  * The Queue class represents a basic implementation of a queue data structure.
  *
@@ -7,8 +7,8 @@ import node.Node;
  */
 public class Queue<T> {
 
-    private Node<T> head; // The first element in the queue
-    private Node<T> tail; // The last element in the queue
+    private ListNode<T> head; // The first element in the queue
+    private ListNode<T> tail; // The last element in the queue
     public int length; // The number of elements in the queue
 
     /**
@@ -40,7 +40,7 @@ public class Queue<T> {
      * @param data the element to be added
      */
     public void enqueue(T data) {
-        Node<T> newNode = new Node<>(data);
+        ListNode<T> newNode = new ListNode<>(data);
         if (head == null) {
             // The queue is empty, so the new element becomes both the head and the tail
             head = newNode;
@@ -76,7 +76,7 @@ public class Queue<T> {
         if (head == null && tail == null) {
             System.out.println("The queue is empty");
         } else {
-            Node<T> pointer = head;
+            ListNode<T> pointer = head;
             while (pointer.getNext() != null) {
                 System.out.println(pointer.getData().toString());
                 pointer = pointer.getNext();

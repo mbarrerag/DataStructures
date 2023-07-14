@@ -1,6 +1,6 @@
 package queueandstack;
 
-import node.Node;
+import node.ListNode;
 
 /**
  * The Stack class represents a basic implementation of a stack data structure.
@@ -9,7 +9,7 @@ import node.Node;
  */
 public class Stack<T> {
 
-    private Node<T> head; // The top element of the stack
+    private ListNode<T> head; // The top element of the stack
     public int length; // The number of elements in the stack
 
     /**
@@ -26,7 +26,7 @@ public class Stack<T> {
      * @param data the element to be added
      */
     public void push(T data) {
-        Node<T> newNode = new Node<>(data);
+        ListNode<T> newNode = new ListNode<>(data);
         if (head == null) {
             // The stack is empty, so the new element becomes the head
             head = newNode;
@@ -61,7 +61,7 @@ public class Stack<T> {
         if (head == null) {
             System.out.println("There are no elements in the stack");
         } else {
-            Node<T> pointer = head;
+            ListNode<T> pointer = head;
             while (pointer.getNext() != null) {
                 System.out.println(pointer.getData().toString());
                 pointer = pointer.getNext();

@@ -1,5 +1,5 @@
 package doublelinkedlist;
-import node.Node;
+import node.ListNode;
 /**
  * Represents a Double Linked List data structure.
  *
@@ -7,8 +7,8 @@ import node.Node;
  */
 public class DoubleLinkedList<T> {
 
-    private Node<T> head; // Pointer to the first node of the list
-    private Node<T> tail; // Pointer to the last node of the list
+    private ListNode<T> head; // Pointer to the first node of the list
+    private ListNode<T> tail; // Pointer to the last node of the list
     private int length = 0; // Counter to store the length of the list
 
     /**
@@ -45,7 +45,7 @@ public class DoubleLinkedList<T> {
      * @param data the data to be added to the list
      */
     public void add(T data) {
-        Node<T> newNode = new Node<T>(data);
+        ListNode<T> newNode = new ListNode<T>(data);
         if (isEmpty()) {
             head = newNode;
             tail = newNode;
@@ -78,7 +78,7 @@ public class DoubleLinkedList<T> {
             return;
         }
 
-        Node<T> pointer = head;
+        ListNode<T> pointer = head;
         int counter = 0;
 
         while (counter < index) {
@@ -97,7 +97,7 @@ public class DoubleLinkedList<T> {
         if (isEmpty()) {
             System.out.println("There are no elements in the list");
         } else {
-            Node<T> pointer = head;
+            ListNode<T> pointer = head;
             while (pointer != null) {
                 System.out.println(pointer.getData().toString());
                 pointer = pointer.getNext();
@@ -157,7 +157,7 @@ public class DoubleLinkedList<T> {
             return;
         }
 
-        Node<T> pointer = head;
+        ListNode<T> pointer = head;
         int counter = 0;
 
         while (counter < index) {
