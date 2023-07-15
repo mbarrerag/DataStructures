@@ -8,6 +8,7 @@ public class HashSet<P> {
     private static int counter = 1;
     public static void main(String[] args) {
         // Create a new LinkedHashSet that don't allow duplicates and is ordered by insertion
+        //It organizes the elements in the order in which they were inserted
         Set<Person> linkedHashSet = new LinkedHashSet<>();
         linkedHashSet.add(new Person("John", 20, 1234));
         linkedHashSet.add(new Person("Carlos", 22, 1234));
@@ -29,8 +30,10 @@ public class HashSet<P> {
             counter++;
        }
         counter = 1;
-        //Creat
 
+
+        // Create a new TreeSet that don't allow duplicates and is unordered
+        //It organizes the elements in ascending order like a current binary tree
         Set<Person> treeSet = new TreeSet<Person>();
         treeSet.add(new Person("John", 20, 1234));
         treeSet.add(new Person("Carlos", 22, 1234));
