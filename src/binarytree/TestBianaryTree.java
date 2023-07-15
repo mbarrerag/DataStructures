@@ -19,8 +19,11 @@ public class TestBianaryTree {
 
         // Insert nodes into the binary tree
         binaryTree.insert(new TreeNode<Integer>(5));
+        binaryTree.insert(new TreeNode<Integer>(2));
+
         binaryTree.insert(new TreeNode<Integer>(3));
         binaryTree.insert(new TreeNode<Integer>(7));
+        binaryTree.insert(new TreeNode<Integer>(4));
         binaryTree.insert(new TreeNode<Integer>(1));
         binaryTree.insert(new TreeNode<Integer>(1));
 
@@ -31,7 +34,7 @@ public class TestBianaryTree {
         System.out.println(binaryTree.exists(2));
 
         // Delete a node with value 1 from the binary tree
-        binaryTree.delete(1);
+        binaryTree.delete(2);
 
         // Display the binary tree after deletion
         binaryTree.display();
