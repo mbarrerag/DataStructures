@@ -1,3 +1,8 @@
+
+![Complexity](https://github.com/mbarrerag/DataStructures-Java/assets/101472701/8c70f9df-60f3-407f-89b0-319e523c7038)
+
+
+
 # DataStructures
 
 Welcome to the Data Structures Repository! This repository contains various data structures implemented. These data structures are fundamental building blocks in computer science and can be used to efficiently store, manipulate, and retrieve data.
