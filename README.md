@@ -1,6 +1,6 @@
 
 ![Complexity](https://github.com/mbarrerag/DataStructures-Java/assets/101472701/8c70f9df-60f3-407f-89b0-319e523c7038)
-
+Search: Find an element, Access: Get a value in a determined posicion or index
 
 
 # DataStructures
